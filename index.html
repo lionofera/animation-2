@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                height: 35px;
+                width: 15px;
+            }
+           
+            100% {
+           
+                transform: rotate(90deg);
+                margin:8.5px;
+               
+            }
+        }
+        .container {
+            height:80vh;
+            width: 100%;
+            border: 3px dotted magenta ;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: lightpink;
+        }
+        .brick, .one, .two, .three, .four, .five, .six {
+            position: relative;
+            height:35px;
+            width:15px;
+            border:1px solid green;
+            background-color: red;
+            padding: 5px;
+            margin: 10px;
+           
+        }
+        .one {
+            position: relative;
+           
+            animation-name: sliding;
+            /*animation-iteration-count: infinite;*/
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+           
+        }
+        .two {
+            animation-name: sliding;
+            /*animation-iteration-count: infinite;*/
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+        }
+        .three {
+            animation-name: sliding;
+            animation-duration: 4.5s;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 4s;
+            /*animation-iteration-count: infinite;*/
+        }
+        .four {
+            animation-name: sliding;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 6s;
+            /*animation-iteration-count: infinite;*/
+        }
+        .five {
+            animation-name: sliding;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 8s;
+            /*animation-iteration-count: infinite*/
+        }
+        .six {
+            animation-name: sliding;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 10s;
+            /*animation-iteration-count: infinite;*/
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="brick one">
+           
+        </div>
+        <div class="brick two">
+           
+        </div>
+        <div class="brick three">
+           
+        </div>
+        <div class="brick four">
+           
+        </div>
+        <div class="brick five">
+           
+        </div>
+        <div class="brick six">
+           
+        </div>
+       
+    </div>
+    
+</body>
+</html>
